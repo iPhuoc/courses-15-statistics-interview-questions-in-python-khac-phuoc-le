@@ -3,7 +3,7 @@ title: Insert title here
 key: de75eb5d8613c1adaedd3593b32f4583
 
 ---
-## Title Slide
+## Hypothesis Testing
 
 ```yaml
 type: "TitleSlide"
@@ -13,7 +13,27 @@ key: "c9b30d949b"
 `@lower_third`
 
 name: Khac Phuoc Le
-title: undefined
+title: Data Scientist, Deloitte Consulting
+
+
+`@script`
+
+
+
+---
+## Interview Scenario
+
+```yaml
+type: "FullSlide"
+key: "70c204aea9"
+```
+
+`@part1`
+- Idea for a marketing strategy
+
+ - 
+
+- Question from the head of marketing:
 
 
 `@script`
