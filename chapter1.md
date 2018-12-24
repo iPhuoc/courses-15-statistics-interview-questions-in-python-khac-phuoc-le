@@ -1,5 +1,5 @@
 ---
-title: 'Chapter Title Here'
+title: 'Hypothesis Testing'
 description: 'Chapter description goes here.'
 ---
 

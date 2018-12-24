@@ -29,11 +29,15 @@ key: "70c204aea9"
 ```
 
 `@part1`
-- Idea for a marketing strategy
+- **Marketing department situation**: {{1}} 
 
- - 
+ - Idea for new marketing strategy: **new coupon** {{1}} 
+ - **Goal**: increase traffic onto website {{1}} 
 
-- Question from the head of marketing:
+- **Question** from the head of marketing: {{2}} 
+>**How do we know that the new strategy works?** {{2}}  
+
+- **Answer**: Using **Hypothesis testing** (here also called **A/B Testing**) {{3}}
 
 
 `@script`
@@ -41,7 +45,7 @@ key: "70c204aea9"
 
 
 ---
-## Hypothesis Testing
+## Hypothesis Testing Concept
 
 ```yaml
 type: "FullSlide"
@@ -50,16 +54,7 @@ center_content: false
 ```
 
 `@part1`
-Part 1
-
-```python
-import pandas as pd
-test = pd.read("test.csv")
-```
-
-```
-1234
-```
+- Null Hypothesis ($H_0$) and alternative Hypothesis ($H_A$)
 
 
 `@script`
