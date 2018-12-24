@@ -35,9 +35,10 @@ key: "70c204aea9"
  - **Goal**: increase traffic onto website {{1}} 
 
 - **Question** from the head of marketing: {{2}} 
->**How do we know that the new strategy works?** {{2}}  
+ - **How do we know that the new strategy works?** {{2}}  
 
-- **Answer**: Using **Hypothesis testing** (here also called **A/B Testing**) {{3}}
+- **Answer**: {{3}}
+ - Using statistical testing or **Hypothesis testing** (here also called **A/B Testing**) {{3}}
 
 
 `@script`
@@ -54,7 +55,10 @@ center_content: false
 ```
 
 `@part1`
-- Null Hypothesis ($H_0$) and alternative Hypothesis ($H_A$)
+1. **Define:** **Null Hypothesis** ($H_0$) and **alternative Hypothesis** ($H_A$)
+2. **Assume $H_0$ is true** and calculate  the **probability** of our data **under $H_0$**
+3. Decide the **level of significance** (usually marked as $\alpha$)
+4. If this probability is **smaller than $\alpha$**, **reject $H_0$** in favour of the alternative hypothesis
 
 
 `@script`
