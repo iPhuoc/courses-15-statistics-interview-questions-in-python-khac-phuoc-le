@@ -66,7 +66,7 @@ test
 
 
 ---
-## Insert title here...
+## Campaign Data
 
 ```yaml
 type: "FullCodeSlide"
@@ -74,11 +74,58 @@ key: "acb86aca57"
 ```
 
 `@part1`
-```import pandas as pd```
+```python
+import numpy as np
+import pandas as pd
 
-- 
+my_data = pd.read_csv("my_data.csv")
+my_data.head()
+```
+```
+Out[1]: 
+   click_date  campaign  clicked
+0  2018-12-01  old_code        1
+1  2018-12-01  old_code        1
+2  2018-12-01  old_code        0
+3  2018-12-01  old_code        0
+4  2018-12-01  old_code        0
+```
+```python
+cont = pd.crosstab(my_data["campaign"],
+                   my_data["clicked"])
+print(cont)
 
-- `test` test2
+clicked     0    1
+campaign          
+new_code  484  516
+old_code  688  312
+```
+
+
+`@script`
+
+
+
+---
+## Perform a chi squared test
+
+```yaml
+type: "FullCodeSlide"
+key: "c7b658c138"
+```
+
+`@part1`
+```python
+from scipy.stats import chi2_contingency
+
+chi2, p, dof, expected = chi2_contingency(cont)
+
+print(p)
+3.09025555601e-20
+
+print(p < 0.05)
+True
+```
 
 
 `@script`
