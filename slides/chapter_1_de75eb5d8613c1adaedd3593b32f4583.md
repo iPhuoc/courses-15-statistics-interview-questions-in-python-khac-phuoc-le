@@ -66,6 +66,35 @@ test
 
 
 ---
+## Apply Hypothesis Testing - Marketing Campaign
+
+```yaml
+type: "FullSlide"
+key: "8fd1135ee6"
+```
+
+`@part1`
+1. **Define:** **Null Hypothesis** ($H_0$) and **alternative Hypothesis** ($H_A$)
+
+ $H_0$: **No difference** between new and old coupons 
+
+ $H_A$: There is a difference between new and old coupons 
+
+2. **Assume $H_0$ is true** and calculate  the **probability** of our data **under $H_0$**
+ 
+  Use **Chi-Squared test** for binary data (Clicked: Yes/No)
+3. Decide the **level of significance** (usually marked as $\alpha$)
+
+     $\alpha = 0.05$
+ 
+4. If this probability is **smaller than $\alpha$**, **reject $H_0$** in favour of the alternative hypothesis
+
+
+`@script`
+
+
+
+---
 ## Campaign Data
 
 ```yaml
