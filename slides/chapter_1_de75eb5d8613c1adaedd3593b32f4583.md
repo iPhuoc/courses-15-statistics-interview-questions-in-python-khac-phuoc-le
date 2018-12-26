@@ -42,7 +42,7 @@ key: "70c204aea9"
 
 
 `@script`
-Let's now assume that in your Interview there is also the head of the marketing department. He tells you that they are currently thinking about a new marketing strategy. In particular they want to test a new coupon in their newsletters and want to see if the customers will respond better. 
+Let's now assume that in your Interview there is also the head of the marketing department. He tells you that they are currently thinking about a new marketing strategy. In particular they want to test a new coupon and want to see if the customers will respond better. 
 
 Now he asks you how you would find out if the new strategy with the new coupon works or not.
 
