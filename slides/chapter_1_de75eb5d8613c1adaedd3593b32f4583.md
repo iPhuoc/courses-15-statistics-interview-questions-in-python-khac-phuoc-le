@@ -197,21 +197,27 @@ key: "c7b658c138"
 ```python
 # impport chi2_contingency
 from scipy.stats import chi2_contingency
-
+```
+{{1}} 
+```python
 # Perform Chi Squared Test
 chi2, p, dof, expected = chi2_contingency(cont)
-
+```
+{{2}} 
+```python
 # Print p-Value
 print(p)
 3.09025555601e-20
-
-print(p < 0.05)
-True
 ```
+{{3}} 
+- p is smaller than $\alpha$ => Reject $H_0$ {{4}}
 
 
 `@script`
-
+In order to perform a Chi Squared Test in Python, we first have to import the chi2_contingency module from scipy.stats.
+We then can use chi2_contingency funtion on our previous contingency table which return the Test Statistic, the p-Value, which is the probability of the observed data under the Null Hypothesis, the degree of Freedoms and the expected contingency table under the Null Hypothesis.
+We are interested in the p-Value, so let's print it out.
+The probability is below our signficance level of 0.05 and therefore we can reject our Null Hypothesis that there is no difference between click rates of new and old coupons.
 
 
 ---
