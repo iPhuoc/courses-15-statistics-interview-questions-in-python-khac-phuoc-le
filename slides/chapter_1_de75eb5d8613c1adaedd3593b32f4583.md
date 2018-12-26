@@ -94,7 +94,7 @@ center_content: false
 `@script`
 Let's now see how you would apply hypothesis testing on the marketing campaign scenario.
 The Null Hypothesis would be that there is no difference between the click rates of the old and the new coupons. The alternative hypothesis is exactly the opposite of the Null hypothesis, meaning that there is a difference between the click rates.
-Now we have to calculate the probability under the Null Hypothesis. Since we have binary data, meaning a user can either click on the coupon or he doesn't,  we can use the Chi-Squared test. If you want to learn more about wich tests to use for which scenarios, datacamp has a lot of great courses for that.
+Now we have to calculate the probability under the Null Hypothesis. Since we have binary data, meaning a user can either click on the coupon or not,  we can use the Chi-Squared test. If you want to learn more about wich tests to use for which scenarios, datacamp has a lot of great courses for that.
 A common value for the significance level alpha is 0.05 which we have to compare our probability with and then decide whether to reject our Null Hypothesis or not.
 
 
