@@ -175,7 +175,7 @@ old_code  0.688  0.312
 
 `@script`
 In order to see how many people actually clicked on the two different coupons we can create a contingency table using pandas crosstab function. 
-We see that 516 people clicked on the new coupond and 312 on the old one.
+We see that 516 people clicked on the new coupon and 312 clicked on the old one.
 Another common way to display them are calculating the click rates which are also called conversion rates. We can use apply and lambda functions to divide the previous values by the number of coupons for each campaign.
 
 
