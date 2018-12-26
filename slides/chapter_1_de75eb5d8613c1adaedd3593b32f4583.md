@@ -87,14 +87,14 @@ center_content: false
 2. **Assume $H_0$ is true** and calculate  the **probability** of our data **under $H_0$** {{3}}
  - Use **Chi-Squared test** for binary data (Clicked: Yes/No){{4}} 
 3. Decide the **level of significance** (usually marked as $\alpha$) {{5}} 
- - $\alpha = 0.05$ {{6}} 
-4. If this probability is **smaller than $\alpha$**, **reject $H_0$** in favour of the alternative hypothesis {{7}}
+ - $\alpha = 0.05$ {{5}} 
+4. If this probability is **smaller than $\alpha$**, **reject $H_0$** in favour of the alternative hypothesis {{6}}
 
 
 `@script`
 Let's now see how you would apply hypothesis testing on the marketing campaign scenario.
 The Null Hypothesis would be that there is no difference between the click rates of the old and the new coupons. The alternative hypothesis is exactly the opposite of the Null hypothesis, meaning that there is a difference between the click rates.
-Now we have to calculate the probability under the Null Hypothesis. Since we have binary data, meaning a user can either click on the coupon or not,  we can use the Chi-Squared test. If you want to learn more about wich tests to use for which scenarios, datacamp has a lot of great courses for that.
+Now we have to calculate the probability under the Null Hypothesis. Since we have binary data, meaning a user can either click on the coupon or not,  we can use the Chi-Squared test. If you want to learn more about which tests to use for which scenarios, DataCamp has a lot of great courses for that.
 A common value for the significance level alpha is 0.05 which we have to compare our probability with and then decide whether to reject our Null Hypothesis or not.
 
 
