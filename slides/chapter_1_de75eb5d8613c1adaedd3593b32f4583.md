@@ -121,8 +121,7 @@ import pandas as pd
 # load data and display first rows
 new_code_campaign = pd.read_csv("new_code_campaign.csv")
 new_code_campaign.head()
-```
-```
+
    click_date  campaign  clicked
 0  2018-12-01  old_code        1
 1  2018-12-01  old_code        1
@@ -131,10 +130,20 @@ new_code_campaign.head()
 4  2018-12-01  old_code        0
 ```
 
+```python
+new_code_campaign["campaign"].value_counts()
+
+old_code    1000
+new_code    1000
+Name: campaign, dtype: int64
+```
+{{1}}
+
 
 `@script`
 Let's see how you would do it in Python. 
 First we have to import our moduls. Here we imported numpy as np and pandas as pd. Then we use pandas read_csv function to load our data to new_code_capaign. Using the method .head() we can display the first 5 rows of our dataframe. In total we have three columns with the click data, the campaign telling us whether it's the old or new code, and the column clicked, which tells us whether the customer clicked on the code or not. 1 means the customer did click on the coupond and 0 not.
+We can use the value_counts() method on our "campaign" column to see how many old and new coupons were sent to the customers. Here 1000 coupons were sent in each case.
 
 
 ---
@@ -157,7 +166,7 @@ campaign
 new_code  484  516
 old_code  688  312
 ```
-{{1}} 
+
 ```python
 # calculate click rate for each campaign (conversion rate)
 cont.apply(lambda r: r/r.sum(), axis=1)
@@ -167,11 +176,13 @@ campaign
 new_code  0.484  0.516
 old_code  0.688  0.312
 ```
-{{2}}
+{{1}}
 
 
 `@script`
-
+In order to see how many people actually clicked on the two different coupons we can create a contingency table using pandas crosstab function. 
+We see that 516 people clicked on the new coupond and 312 on the old one.
+Another common way to display them are calculating the click rates which are also called conversion rates. We can use apply and lambda functions to divide the previous values by the number of coupons for each campaign.
 
 
 ---
