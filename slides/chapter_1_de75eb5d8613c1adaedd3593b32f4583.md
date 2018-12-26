@@ -209,9 +209,9 @@ print(p)
 
 `@script`
 In order to perform a Chi-Squared Test in Python, we first have to import the chi2_contingency module from scipy.stats.
-We then can use the chi2_contingency function on our previous contingency table which return the Test Statistic, the p-Value, which is the probability of the observed data under the Null Hypothesis, the degree of Freedoms and the expected contingency table under the Null Hypothesis.
+We then can use the chi2_contingency function on our previous contingency table which returns the Test Statistic, the p-Value, which is the probability of the observed data under the Null Hypothesis, the degree of Freedoms and the expected contingency table under the Null Hypothesis.
 We are interested in the p-Value, so let's print it out.
-The probability is below our significance  level of 0.05 and therefore we can reject our Null Hypothesis that there is no difference between click rates of new and old coupons.
+The probability is below our significance  level of 0.05 and therefore we can reject our Null Hypothesis that there is no difference between the click rates of new and the old coupons.
 
 
 ---
