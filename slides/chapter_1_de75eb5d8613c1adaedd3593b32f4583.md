@@ -136,7 +136,7 @@ Name: campaign, dtype: int64
 
 `@script`
 Let's see how you would do it in Python. 
-First we have to import our moduls. Here we imported numpy as np and pandas as pd. Then we use pandas read_csv function to load our data to new_code_capaign. Using the method .head() we can display the first 5 rows of our dataframe. In total we have three columns with the click data, the campaign telling us whether it's the old or new code, and the column clicked, which tells us whether the customer clicked on the code or not. 1 means the customer did click on the coupon and 0 if not.
+First we have to import our moduls. Here we imported numpy as np and pandas as pd. Then we use pandas read_csv function to load our data to new_code_capaign. Using the method .head() we can display the first 5 rows of our dataframe. In total we have three columns with the click date, the campaign telling us whether it's the old or new code, and the column clicked, which tells us whether the customer clicked on the code or not. 1 means the customer did click on the coupon and 0 if not.
 We can use the value_counts() method on our "campaign" column to see how many old and new coupons were sent to the customers. Here 1000 coupons were sent in each case.
 
 
