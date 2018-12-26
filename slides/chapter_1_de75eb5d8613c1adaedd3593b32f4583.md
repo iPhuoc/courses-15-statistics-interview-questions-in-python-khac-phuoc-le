@@ -120,6 +120,7 @@ Out[1]:
 4  2018-12-01  old_code        0
 ```
 ```python
+# create Contingency table
 cont = pd.crosstab(my_data["campaign"],
                    my_data["clicked"])
 print(cont)
@@ -136,7 +137,7 @@ old_code  688  312
 
 
 ---
-## Perform a chi squared test
+## Perform a Chi Squared test in Python
 
 ```yaml
 type: "FullCodeSlide"
@@ -145,10 +146,13 @@ key: "c7b658c138"
 
 `@part1`
 ```python
+# impport chi2_contingency
 from scipy.stats import chi2_contingency
 
+# Perform Chi Squared Test
 chi2, p, dof, expected = chi2_contingency(cont)
 
+# Print p-Value
 print(p)
 3.09025555601e-20
 
@@ -162,7 +166,7 @@ True
 
 
 ---
-## Final Slide
+## Let's practice!
 
 ```yaml
 type: "FinalSlide"
