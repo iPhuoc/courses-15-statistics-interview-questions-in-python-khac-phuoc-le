@@ -57,14 +57,18 @@ center_content: false
 ```
 
 `@part1`
-1. **Define:** **Null Hypothesis** ($H_0$) and **alternative Hypothesis** ($H_A$)
-2. **Assume $H_0$ is true** and calculate  the **probability** of our data **under $H_0$**
-3. Decide the **level of significance** (usually marked as $\alpha$)
-4. If this probability is **smaller than $\alpha$**, **reject $H_0$** in favour of the alternative hypothesis
+1. **Define:** **Null Hypothesis** ($H_0$) and **alternative Hypothesis** ($H_A$) {{1}} 
+2. **Assume $H_0$ is true** and calculate  the **probability** of our data **under $H_0$** {{2}} 
+3. Decide the **level of significance** (usually marked as $\alpha$) {{3}} 
+4. If this probability is **smaller than $\alpha$**, **reject $H_0$** in favour of the alternative hypothesis {{4}}
 
 
 `@script`
-test
+Now, let's look at the steps on performing a hypothesis test.
+First you always have to define your Null Hypothesis and your alternative Hypothesis.
+In the second step, you assume that the Null Hypothesis is true and you calculate the probability of the observed data under the Null Hypothesis.
+You then have to set a significance level alpha.
+If your calculated probability is smaller than your alpha you reject the Null Hypothesis in favour of your alternative hypothesis.
 
 
 ---
@@ -73,6 +77,7 @@ test
 ```yaml
 type: "FullSlide"
 key: "8fd1135ee6"
+center_content: false
 ```
 
 `@part1`
@@ -150,13 +155,13 @@ old_code  688  312
 ```
 {{1}} 
 ```python
-# calculate proportions 
-cont/cont.sum()
+# calculate click rate for each campaign (conversion rate)
+cont.apply(lambda r: r/r.sum(), axis=1)
 
-clicked          0         1
-campaign                    
-new_code  0.412969  0.623188
-old_code  0.587031  0.376812
+clicked       0      1
+campaign              
+new_code  0.484  0.516
+old_code  0.688  0.312
 ```
 {{2}}
 
