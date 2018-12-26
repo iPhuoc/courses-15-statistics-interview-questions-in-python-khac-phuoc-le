@@ -17,7 +17,7 @@ title: Data Scientist, Deloitte Consulting
 
 
 `@script`
-
+Welcome to the second Chapter!
 
 
 ---
@@ -42,7 +42,9 @@ key: "70c204aea9"
 
 
 `@script`
-
+Let's now assume that in your Interview there is also the head of the marketing department. He tells you that they are currently thinking about a new marketing strategy. In particular they want to test a new coupon in their newsletters and want to see if the customers will respond better. What they want to achieve is to get more clicks on the new coupon so that the customers will go onto their website.
+Now he asks you how you would find out if the new strategy with the new coupon works or not.
+You answer should be statistical testing or Hypothesis testing. Another common name for this type of experiment is "A/B Testing".
 
 
 ---
@@ -95,7 +97,7 @@ key: "8fd1135ee6"
 
 
 ---
-## Campaign Data
+## Campaign Data 1/2
 
 ```yaml
 type: "FullCodeSlide"
@@ -104,14 +106,15 @@ key: "acb86aca57"
 
 `@part1`
 ```python
+# load modules
 import numpy as np
 import pandas as pd
 
+# load data and display first rows
 my_data = pd.read_csv("my_data.csv")
 my_data.head()
 ```
 ```
-Out[1]: 
    click_date  campaign  clicked
 0  2018-12-01  old_code        1
 1  2018-12-01  old_code        1
@@ -119,6 +122,21 @@ Out[1]:
 3  2018-12-01  old_code        0
 4  2018-12-01  old_code        0
 ```
+
+
+`@script`
+
+
+
+---
+## Campaign Data 2/2
+
+```yaml
+type: "FullSlide"
+key: "6962c92a7d"
+```
+
+`@part1`
 ```python
 # create Contingency table
 cont = pd.crosstab(my_data["campaign"],
@@ -130,6 +148,17 @@ campaign
 new_code  484  516
 old_code  688  312
 ```
+{{1}} 
+```python
+# calculate proportions 
+cont/cont.sum()
+
+clicked          0         1
+campaign                    
+new_code  0.412969  0.623188
+old_code  0.587031  0.376812
+```
+{{2}}
 
 
 `@script`
