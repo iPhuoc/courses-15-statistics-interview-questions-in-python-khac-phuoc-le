@@ -44,7 +44,7 @@ key: "70c204aea9"
 `@script`
 Let's now assume that in your Interview there is also the head of the marketing department. He tells you that they are currently thinking about a new marketing strategy. In particular they want to test a new coupon and want to see if the customers will respond better. 
 
-Now he asks you how you would find out if the new strategy with the new coupon works or not.
+Now he asks you how you would find out if the new strategy works or not.
 
 Your answer should be statistical testing or Hypothesis testing. Another common name for this type of experiment is "A/B Testing".
 
