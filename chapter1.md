@@ -1,6 +1,7 @@
 ---
 title: 'Hypothesis Testing'
 description: 'Chapter description goes here.'
+free_preview: true
 ---
 
 ## Example coding exercise
